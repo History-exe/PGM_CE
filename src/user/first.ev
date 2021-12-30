@@ -1,0 +1,13 @@
+msgboxon()
+
+text("Hello, PGM.")
+textcl()
+
+
+
+
+
+text("[c=FF0000]红[/c][c=00FF00]绿[/c][c=0000FF]蓝[/c]")
+textcl()
+
+text("[c=DDCAB3]丽塔[/c]","麻烦的[c=FF0000]事[/c]交给我，不能脏了您的手。")

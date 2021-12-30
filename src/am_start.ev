@@ -1,0 +1,22 @@
+
+-- ===================================================================
+*begin
+-- 清空所有资源
+allclear()
+-- 重置所有变量
+AllVarReset()
+-- 加载所有变量
+pubdata_checkup()
+-- 初始化文本模式
+speakmode(speak_mode_sample)
+-- 初始化mp3(空白视频，不可删除)
+pmplay("system/test.pmp")
+-- 初始化历史回想
+historybegin()
+-- 初始化字体
+font(FONT,FONTSIZE)
+fontwidth(FONTWIDTH,FONTHEIGHT)
+-- ===================================================================
+-- 在此分割线下面编写你的代码
+
+jump("first.ev")
