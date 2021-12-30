@@ -1,0 +1,72 @@
+基础指令：
+name(tx)
+text(...)	--//say/(name,say)
+textcl()
+wait(time,...)	--//time,CANSKIP
+msgboxon()
+msgboxoff()
+
+图片指令：
+bg(file,...)	--//file,rule/(dx,dy),CANSKIP
+fg(file,...)	--//file,pos(dx,dy),CANSKIP
+fgcl(...)	--//pos(index)
+fadetimereset(type,time)
+
+动画指令：
+animation(index,file,count,speed,time,dx,dy)
+animationcl(index)
+
+音视频指令：
+bgm(file)
+bgmstop(...)	--//time
+voice(file)
+voicestop()
+voicereplay()
+sound(file,...)	--//file,num,LOOP
+soundstop(...)	--//index*3
+video(file)
+
+字体指令：
+font(file,size)
+fontcolor(r,g,b,a)
+fontwidth(width,height)
+textlen(num)
+textline(line)
+
+效果指令：
+quake(...)	--//time
+monocro(value)
+chara_up(index)
+chara_down(index)
+layer_move(layer_type,index,x1,y1,x2,y2,time)
+bgmfade(volume,maxVolume,time)
+
+变量存档指令：
+amp_pubsave()
+amp_pubload()
+
+存档指令：
+drawsave()
+drawload()
+
+--=================
+功能接口：
+drawevent()
+drawauto()
+drawskip()
+drawmenu()
+drawramus(...)
+drawtitle(...)
+show_strategy(strategy_img)
+drawanalog()
+drawhide()
+drawhelp()
+drawconfig()
+drawhistory()
+CGmode()
+
+--=================
+占用情况：
+name占用texfg：32；
+history占用texfg：1~30；
+config占用pub_value[126]~pub_value[128]；
